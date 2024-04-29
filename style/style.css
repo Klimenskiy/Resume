@@ -342,6 +342,12 @@ a {
   line-height: 40px;
   padding: 0 20px;
 }
+.skills__all p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+}
 .skills__all h2 {
   font-size: 46px;
   font-family: "Caveat Brush";
@@ -737,10 +743,10 @@ a {
     margin: 0;
     max-width: 1000px;
     gap: 10px;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
-    margin-right: 15px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin: 0 40px 0 80px;
   }
   .header__logo {
     margin: 0;
@@ -756,7 +762,6 @@ a {
             flex-direction: row-reverse;
   }
   .header__social {
-    display: none;
     margin: 0;
   }
 }
@@ -765,9 +770,21 @@ a {
           transform: translateX(100%);
 }
 
-@media (max-width: 400px) {
+@media (max-width: 600px) {
   .header__logo {
     display: none;
+  }
+}
+@media (max-width: 395px) {
+  .header__content {
+    margin: 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 @media (max-width: 1370px) {

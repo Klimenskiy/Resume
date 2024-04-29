@@ -275,6 +275,10 @@ a {
 		margin-bottom: 40px;
 		line-height: 40px;
 		padding: 0 20px;
+		p{
+			display: flex;
+			text-align: center;
+		}
 		h2 {
 			font-size: 46px;
 			font-family: 'Caveat Brush';
@@ -567,10 +571,11 @@ a {
 		margin: 0;
 		max-width: 1000px;
 		gap: 10px;
-		justify-content: flex-end;
-		margin-right: 15px;
+		justify-content: space-between;
+		margin: 0 40px 0 80px;
 	}
 	.header__logo {
+		
 		margin: 0;
 	}
 	.header__contacts {
@@ -579,7 +584,7 @@ a {
 		flex-direction: row-reverse;
 	}
 	.header__social {
-		display: none;
+		
 		margin: 0;
 	}
 }
@@ -589,10 +594,17 @@ a {
 		transform: translateX(100%);
 	}
 }
-
-@media (max-width: 400px) {
+@media (max-width: 600px){
 	.header__logo {
 		display: none;
+	}
+}
+
+@media (max-width: 395px){
+	.header__content {
+		margin: 0;
+		flex-direction: column;
+		align-items: center;
 	}
 }
 
