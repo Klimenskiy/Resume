@@ -523,7 +523,7 @@ a {
 			transform: translateX(0) rotate(-45deg);
 		}
 		& .burger-menu span {
-			background-color: white;
+			background-color: #fabc3d;
 		}
 	}
 }
@@ -553,15 +553,16 @@ a {
 		position: fixed;
 		left: 0;
 		top: 0;
-		background-color: #9898e2;
+		background-color: black;
 		flex-direction: column;
 		padding: 80px 40px 40px 40px;
 		z-index: 1;
 		left: -190px;
 		transition: transform 0.5s;
+		border-radius: 10px;
 		a {
 			display: block;
-			color: white;
+			color: #fabc3d;
 			padding-bottom: 10px;
 			font-size: 26px;
 		}
